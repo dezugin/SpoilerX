@@ -1,12 +1,12 @@
-body{
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1{
-    color: #ff01a5;
-  }
-  
-  h2{
-    color: #79589F
-  }
+.logo{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.construction{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
