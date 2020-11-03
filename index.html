@@ -8,65 +8,133 @@
             <title>SpoilerX</title>
         </head>
         <body>
-            <!--Cabeçalho da página-->
-            <header class="container header">
-                <div class="dropdown">
-                    <div class="row">
-                        <div class="col-2 col-lg-1 area51">
-                            <div class="dropdown show">
-                                <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="index.html">Home</a>
-                                <a class="dropdown-item" href="series.html">Séries</a>
-                                <a class="dropdown-item" href="mangas.html">Mangás</a>
-                                <a class="dropdown-item" href="terror.html">Terror</a>
-                                <a class="dropdown-item" href="forum.html">Fórum</a>
-                                
+
+
+            <header>
+                <!--NAVBAR-->
+                <nav class="navbar navbar-expand-lg navbar-dark navBarColor ">
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="area51">
+                                <div class="dropdown show">
+                                    <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menu
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="index.html">Home</a>
+                                    <a class="dropdown-item" href="series.html">Séries</a>
+                                    <a class="dropdown-item" href="mangas.html">Mangás</a>
+                                    <a class="dropdown-item" href="terror.html">Terror</a>
+                                    <a class="dropdown-item" href="forum.html">Fórum</a>
+                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-8 col-lg-2 header_menu0">    
-                            <ul class="nav">
-                                <li class="nav-itemb">
-                                    <img src ="/imagens/spoilerx.jpg" alt="LPH" class ="logotop"> 
-                                </li>
-                                    </ul>
-                        </div>
-                        <div class="col-md-1 col-lg-9 header_menu">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="series.html">Séries</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="mangas.html">Mangás</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="terror.html">Terror</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="forum.html">Fórum</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <nav class="navbar navbar-danger bg-link pequi">
-                                                <form class="form-inline">
-                                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
-                                                <button class="btn btn-warning my-2 my-sm-0" type="submit">Pesquisa</button>
-                                                </form>
-                                            </nav>
-                                        </li>
-                                    </ul>
-
-
+                    </div>
+                    <img src="img/logo.jpeg" class="logotop">
+                  
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 15px;">
+                        <ul class="navbar-nav mr-auto ">
+        
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="series.html">Séries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="terror.html">Terror</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="mangas.html">Mangás</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum.html">Fórum</a>
+                            </li>
+                        </ul>
+        
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisa</button>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-flip="true"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Entrar
+                        </button>
+        
+        
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Email </label>
+                                    <input type="email" class="form-control" id="campoEmail"
+                                        placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Senha</label>
+                                    <input type="password" class="form-control" id="campoSenha"
+                                        placeholder="Senha">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cadastro.html">Novo por aqui? Cadastrar</a>
+                            <a class="dropdown-item" href="#">Esqueceu a senha?</a>
                         </div>
                     </div>
-                </div>
+        
+                </nav>
+                <script>
+                
+                    // Declara uma função para processar o formulário de login
+                    function processaFormLogin (event) {                
+                            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                            event.preventDefault ();
+            
+                            // Obtem os dados de login e senha a partir do formulário de login
+                            var username = document.getElementById('email').value;
+                            var password = document.getElementById('senha').value;
+            
+                            // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+                            resultadoLogin = loginUser (username, password);
+                            if (resultadoLogin) {
+                                window.location.href = 'index.html';
+                                alert ('Logado');
+        
+                            }
+                            else { // Se login falhou, avisa ao usuário
+                                alert ('Usuário ou senha incorretos');
+                            }
+                    }
+                    document.getElementById ('btnEntrar').addEventListener ('submit', processaFormLogin);
+                </script>
+                
+        
+                <header id="filmes2020Id" class="bg-secondary flex">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col ">
+                                <blockquote class="blockquote text-center ">
+                                    <h1 class="display-3">Novos Spoilers</h1>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </header>
             </header>
-
             <main class="container main">
                 <div class="container">
                     <div class="row acinzentado">

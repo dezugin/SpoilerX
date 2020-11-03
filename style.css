@@ -9,6 +9,16 @@
         margin-top: 12px;
         display: none;
     }
+    .navBarColor
+    {
+        background-color: rgb(255, 193, 38);
+        color: white;
+        padding: 15px;
+        
+    }
+    .navbar-collapse{
+        display:none;
+    }
     .header_area{
         padding: 20px;
     }
@@ -57,6 +67,7 @@
     .logotop{
         width: 150px;
         margin-left: 80px;
+        display: visible;
     }
     .logobottom{
         width:50px;
@@ -120,6 +131,15 @@
         display: none;
     }
 
+    .navBarColor
+    {
+        background-color: rgb(255, 193, 38);
+        color: white;
+        padding: 15px;
+    }
+    .navbar-collapse{
+        display:none;
+    }
     .carousel-inner{
         max-width: 100%;
         align-self: center;
@@ -186,19 +206,22 @@
     .header_area{
         padding:15px;
     }
-    .header_menu ul a{
+    .navBarColor
+    {
         background-color: rgb(255, 193, 38);
         color: white;
+        padding: 15px;
     }
 
-    .header_menu ul a:hover{
+    .navBarColor ul a:hover{
         background-color: black;
     }
-    .active{
-        background-color:lightgrey ;
+    .main .active{
+        background-color:lightgray;
     }
     .carousel-inner{
         max-width: 100%;
+        max-height: 600px;
         align-self: center;
     }
     .dropdown{
@@ -210,7 +233,7 @@
     }
     .batima{
         max-width: 100%;
-        max-height: 100%;
+        max-height: 300px;
         align-self: center;
     }
     .footer {
