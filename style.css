@@ -393,15 +393,17 @@
     .navBarColor
     {
         background-color: rgb(255, 193, 38);
-        color: white;
+        color: #fff;
         padding: 15px;
     }
 
     .navBarColor ul a:hover{
         background-color: black;
+        color: #fff;
     }
     .main .active{
         background-color:lightgray;
+        color: #fff;
     }
     .carousel-inner{
         max-width: 100%;
@@ -426,7 +428,7 @@
         bottom: 0;
         width: 100%;
         background: rgb(255, 193, 38);
-        color: white;
+        color: #fff;
         text-align: center;
     }
     .titulo{
@@ -466,9 +468,15 @@
     .main .card{
         margin-bottom: 15px;
     }
+    .nav-item{
+        color: #fff;
+    }
+    .nav-link{
+        color: #fff;
+    }
     body {
         color: #fff;
-        background: #19aa8d;
+        background: rgb(179, 13, 24);
         font-family: 'Roboto', sans-serif;
     }
     .form-control {
