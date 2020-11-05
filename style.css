@@ -101,7 +101,7 @@
     }  
     body {
         color: #fff;
-        background: #19aa8d;
+        background: rgb(179, 13, 24);
         font-family: 'Roboto', sans-serif;
     }
     .form-control {
@@ -265,7 +265,7 @@
     }
     body {
         color: #fff;
-        background: #19aa8d;
+        background: rgb(179, 13, 24);
         font-family: 'Roboto', sans-serif;
     }
     .form-control {
