@@ -91,12 +91,11 @@
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="dropdownCheck">
                             <label class="form-check-label" for="dropdownCheck">
-                                Remember me
+                                Permanecer logado
                             </label>
                         </div>
                         
                         <a href="welcomeback.html" button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
-                    </form>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="cadastro.html">Novo por aqui? Cadastrar</a>
                     <a class="dropdown-item" href="#">Esqueceu a senha?</a>
@@ -104,30 +103,7 @@
             </div>
 
         </nav>
-        <script>
-        
-            // Declara uma função para processar o formulário de login
-            function processaFormLogin (event) {                
-                    // Cancela a submissão do formulário para tratar sem fazer refresh da tela
-                    event.preventDefault ();
-    
-                    // Obtem os dados de login e senha a partir do formulário de login
-                    var username = document.getElementById('email').value;
-                    var password = document.getElementById('senha').value;
-    
-                    // Valida login e se estiver ok, redireciona para tela inicial da aplicação
-                    resultadoLogin = loginUser (username, password);
-                    if (resultadoLogin) {
-                        window.location.href = 'index.html';
-                        alert ('Logado');
 
-                    }
-                    else { // Se login falhou, avisa ao usuário
-                        alert ('Usuário ou senha incorretos');
-                    }
-            }
-            document.getElementById ('btnEntrar').addEventListener ('submit', processaFormLogin);
-        </script>
         
 
 
@@ -189,7 +165,7 @@
                 <button type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" href="#">Cadastrar</button>
             </div>
        
-        <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+        <div class="text-center">Ja tem uma conta? <a href="index.html">Faca login no menu acima e aproveite nossa comunidade</a></div>
     </div>
 </body>
 
