@@ -186,6 +186,9 @@
         font-size: 7px;
         position: absolute;
     }
+    .card-text{
+        color:black;
+    }
 }
 @media(min-width:450px) and (max-width: 800px){
     .construction{
@@ -349,6 +352,9 @@
         top: 18px;
         font-size: 7px;
         position: absolute;
+    }
+    .card-text{
+        color:black;
     }
 }
 @media (min-width: 780px){
