@@ -487,6 +487,9 @@
         background: rgb(179, 13, 24);
         font-family: 'Roboto', sans-serif;
     }
+    .card-text{
+        color:black;
+    }
     .form-control {
         font-size: 15px;
     }

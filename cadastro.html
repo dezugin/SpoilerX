@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/view/style.css">
 
     <title>SpoilerX!</title>
 </head>
@@ -28,39 +28,39 @@
                             Menu
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="index.html">Home</a>
-                            <a class="dropdown-item" href="series.html">Séries</a>
-                            <a class="dropdown-item" href="mangas.html">Mangás</a>
-                            <a class="dropdown-item" href="terror.html">Terror</a>
-                            <a class="dropdown-item" href="forum.html">Fórum</a>
+                            <a class="dropdown-item" href="/view/index.html">Home</a>
+                            <a class="dropdown-item" href="/view/series.html">Séries</a>
+                            <a class="dropdown-item" href="/view/mangas.html">Mangás</a>
+                            <a class="dropdown-item" href="/view/terror.html">Terror</a>
+                            <a class="dropdown-item" href="/view/forum.html">Fórum</a>
                             
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="img/logo.jpeg" class="logotop">
+            <img src="/imagens/spoilerx.jpg" class="logotop">
           
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 15px;">
                 <ul class="navbar-nav mr-auto ">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/view/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="series.html">Séries</a>
+                        <a class="nav-link" href="/view/series.html">Séries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="terror.html">Terror</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="mangas.html">Mangás</a>
+                        <a class="nav-link" href="/view/terror.html">Terror</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="forum.html">Fórum</a>
+                        <a class="nav-link" href="/view/mangas.html">Mangás</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view/forum.html">Fórum</a>
                     </li>
                 </ul>
 
@@ -95,15 +95,38 @@
                             </label>
                         </div>
                         
-                        <a href="welcomeback.html" button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
+                        <a href="/view/welcomeback.html" button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="cadastro.html">Novo por aqui? Cadastrar</a>
+                    <a class="dropdown-item" href="/cadastro.html">Novo por aqui? Cadastrar</a>
                     <a class="dropdown-item" href="#">Esqueceu a senha?</a>
                 </div>
             </div>
 
         </nav>
+        <script>
+        
+            // Declara uma função para processar o formulário de login
+            function processaFormLogin (event) {                
+                    // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                    event.preventDefault ();
+    
+                    // Obtem os dados de login e senha a partir do formulário de login
+                    var username = document.getElementById('email').value;
+                    var password = document.getElementById('senha').value;
+    
+                    // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+                    resultadoLogin = loginUser (username, password);
+                    if (resultadoLogin) {
+                        window.location.href = 'index.html';
+                        alert ('Logado');
 
+                    }
+                    else { // Se login falhou, avisa ao usuário
+                        alert ('Usuário ou senha incorretos');
+                    }
+            }
+            document.getElementById ('btnEntrar').addEventListener ('submit', processaFormLogin);
+        </script>
         
 
 
@@ -162,7 +185,7 @@
                         href="#">Termos de Uso</a> &amp; <a href="#">Politica de privacidade</a></label>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" href="#">Cadastrar</button>
+                <a href="/view/welcomeback.html" type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" href="#">Cadastrar</a>
             </div>
        
         <div class="text-center">Ja tem uma conta? <a href="index.html">Faca login no menu acima e aproveite nossa comunidade</a></div>
