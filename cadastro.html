@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/caab4b9853.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="/view/style.css">
+
+    <title>SpoilerX!</title>
+</head>
+
+<body>
+
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark navBarColor ">
+            <div class="dropdown">
+                <div class="row">
+                    <div class="area51">
+                        <div class="dropdown show">
+                            <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/view/index.html">Home</a>
+                                <a class="dropdown-item" href="/view/series.html">Séries</a>
+                                <a class="dropdown-item" href="/view/mangas.html">Mangás</a>
+                                <a class="dropdown-item" href="/view/terror.html">Terror</a>
+                                <a class="dropdown-item" href="/view/forum.html">Fórum</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="/imagens/spoilerx.jpg" class="logotop">
+          
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 15px;">
+                <ul class="navbar-nav mr-auto ">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/view/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view/series.html">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view/terror.html">Terror</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view/mangas.html">Mangás</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view/forum.html">Fórum</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisa</button>
+                </form>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-flip="true"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Entrar
+                </button>
+
+
+                <div class="dropdown-menu dropdown-menu-right">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email </label>
+                            <input type="email" class="form-control" id="campoEmail"
+                                placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Senha</label>
+                            <input type="password" class="form-control" id="campoSenha"
+                                placeholder="Senha">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Permanecer logado
+                            </label>
+                        </div>
+                        
+                        <a href="/view/welcomeback.html" button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/cadastro.html">Novo por aqui? Cadastrar</a>
+                    <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                </div>
+            </div>
+
+        </nav>
+        <script>
+        
+            // Declara uma função para processar o formulário de login
+            function processaFormLogin (event) {                
+                    // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                    event.preventDefault ();
+    
+                    // Obtem os dados de login e senha a partir do formulário de login
+                    var username = document.getElementById('email').value;
+                    var password = document.getElementById('senha').value;
+    
+                    // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+                    resultadoLogin = loginUser (username, password);
+                    if (resultadoLogin) {
+                        window.location.href = 'index.html';
+                        alert ('Logado');
+
+                    }
+                    else { // Se login falhou, avisa ao usuário
+                        alert ('Usuário ou senha incorretos');
+                    }
+            }
+            document.getElementById ('btnEntrar').addEventListener ('submit', processaFormLogin);
+        </script>
+        
+
+
+    </header>
+
+
+    <div class="signup-form">
+        
+            <h2>Cadastro</h2>
+            <p>Preencha os campos para criar uma conta!</p>
+            <hr>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <span class="fa fa-user"></span>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" name="username" placeholder="Nome de usuario" required="required" id="campoUserName">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-paper-plane"></i>
+                        </span>
+                    </div>
+                    <input type="email" class="form-control" name="email" placeholder="Endereco de Email" required="required" id="cmpoEmail">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" name="password" placeholder="Senha" required="required" id="camposenha">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-lock"></i>
+                            <i class="fa fa-check"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" name="confirm_password" placeholder="Confirmar Senha"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label"><input type="checkbox" required="required"> Eu aceito os <a
+                        href="#">Termos de Uso</a> &amp; <a href="#">Politica de privacidade</a></label>
+            </div>
+            <div class="form-group">
+                <a href="/view/welcomeback.html" type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" href="#">Cadastrar</a>
+            </div>
+       
+        <div class="text-center">Ja tem uma conta? <a href="index.html">Faca login no menu acima e aproveite nossa comunidade</a></div>
+    </div>
+</body>
+
+<footer class="container footer ">
+    Copyright 2020 - Disciplina de Trabalho interdisciplinar 1 e 2 - <b>ICEI PUC Minas</b>
+    <img src ="/imagens/spoilerx.jpg" alt="LPH" class="logobottom">
+</footer>   
+
+
+
+
+<script src="index.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
