@@ -22,6 +22,7 @@ function salvaDados (dados) {
 
 function incluirNovoCadastro (){
     // Ler os dados do localStorage
+    console.log("Imprime incluirNovoCadastro");
     let objDados = leDados();
     // Incluir um novo contato
     let strUserName = document.getElementById ('campoUserName').value;
@@ -59,6 +60,6 @@ function imprimeDados () {
 
 
 // Configura os botões
-document.getElementById ('btnCarregaDados').addEventListener ('click', imprimeDados);
+//document.getElementById ('btnCarregaDados').addEventListener ('click', imprimeDados);
 document.getElementById ('btnCadastrar').addEventListener ('click', incluirNovoCadastro);
 
