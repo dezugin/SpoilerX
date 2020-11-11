@@ -189,6 +189,11 @@
     .card-text{
         color:black;
     }
+    #formulario { 
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+        }
 }
 @media(min-width:450px) and (max-width: 800px){
     .construction{
@@ -356,8 +361,14 @@
     .card-text{
         color:black;
     }
+    #formulario { 
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+        }
 }
 @media (min-width: 780px){
+   
     a.button {
         -webkit-appearance: button;
         -moz-appearance: button;
@@ -578,4 +589,9 @@
         font-size: 7px;
         position: absolute;
     }
+    #formulario { 
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+        }
 }
