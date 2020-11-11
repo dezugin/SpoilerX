@@ -11,6 +11,7 @@ const initializePassport = require("./passportConfig");
 
 initializePassport(passport);
 
+
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended : false}));
@@ -34,6 +35,7 @@ app.get("/", (req, res)=> {
 app.get("/users/login",checkAuthenticated,(req,res)=>{
     res.render("login");
 });
+
 
 app.get("/users/alter",checkNotAuthenticated,(req,res)=>{
     res.render("alter", {user: req.user.name});
