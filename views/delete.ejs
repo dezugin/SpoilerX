@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <title>Deletar Conta</title>
+</head>
+<body>
+    <h1>Deletar Conta</h1>
+    <ul>
+        <% if(typeof errors != 'undefined'){ %>
+            <% errors.forEach(error=>{%>
+                <li><%=error.message%></li>    
+           <% })%>
+        <%} %>
+    </ul>
+    <h1>Ola <%= user.charAt(0).toUpperCase()+user.slice(1)%>, tem certeza disso?</h1>
+    <div><a href="/users/dashboard">Não</a></div>
+    <form action="/users/delete" method="POST">
+    <div>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+    </div>
+    <div>
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+    </div>
+    <div>
+        <input type="submit" value="Deletar" />
+    </div>
+    </form>
+
+</body>
+</html>
