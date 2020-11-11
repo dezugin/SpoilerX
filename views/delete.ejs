@@ -94,30 +94,7 @@
             </div>
   
         </nav>
-        <script>
-        
-            // Declara uma função para processar o formulário de login
-            function processaFormLogin (event) {                
-                    // Cancela a submissão do formulário para tratar sem fazer refresh da tela
-                    event.preventDefault ();
-    
-                    // Obtem os dados de login e senha a partir do formulário de login
-                    var username = document.getElementById('email').value;
-                    var password = document.getElementById('senha').value;
-    
-                    // Valida login e se estiver ok, redireciona para tela inicial da aplicação
-                    resultadoLogin = loginUser (username, password);
-                    if (resultadoLogin) {
-                        window.location.href = 'index.html';
-                        alert ('Logado');
-  
-                    }
-                    else { // Se login falhou, avisa ao usuário
-                        alert ('Usuário ou senha incorretos');
-                    }
-            }
-            document.getElementById ('btnEntrar').addEventListener ('submit', processaFormLogin);
-        </script>
+
         
   
   
