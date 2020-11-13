@@ -85,8 +85,8 @@ app.post('/users/delete',async (req,res)=>{
                             [email],(err,results)=>{
                                 if (err){
                                     throw err;
+                                    console.log(err);
                                 }
-                                console.log(results.row);
                                 req.logOut();
                                 req.flash('success_msg', "Você deletou sua conta com sucesso");
                                 res.redirect('/users/login')
