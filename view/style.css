@@ -1,3 +1,78 @@
+.bgFull
+{
+    /* The image used */
+  background-image: url("bg2_ti2png.png");
+
+  /* Full height */
+  height: 100%; 
+  width: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.bgWhite {
+    border-radius: 25px 25px 5px 5px;
+    background: white;
+    padding-top: 10px;
+  }
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(255, 193, 38);
+    font-weight: bold;
+}
+
+.carousel-inner{
+    max-width: 100%;
+    align-self: center;
+}
+.carouselImgs{
+    height: 400px;
+    width: 100%;
+    align-self: center;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.textSinopse{
+    padding-right: 20px;
+}
+
+.carouselTitulo{
+    margin: 20px;
+    font-size: 30px;
+}
+.carouselBase{
+    background-color:rgba(217, 30, 37, 0.308) ;
+    
+    border-radius: 25px;
+}
+
+.imgCard
+{
+    height: 200px;
+}
+
+.textCard
+{
+    height: 300px;
+}
+
+.read{
+    overflow: hidden;
+    font-size: 16px !important;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+.read-less{
+    height: 90px!important;
+}
+
+
 @media(max-width:449px){
     .header{
         background: rgb(255, 193, 38);
@@ -32,13 +107,7 @@
     .header_menu ul a:hover{
         background-color: black;
     }
-    .active{
-        background-color:lightgrey ;
-    }
-    .carousel-inner{
-        max-width: 100%;
-        align-self: center;
-    }
+    
     .dropdown{
         
     }
@@ -46,11 +115,7 @@
         top: 0;
         margin-left: 20px;
     }
-    .batima{
-        max-height: 100%;
-        max-width: 100%;
-        align-self: center;
-    }
+    
     .footer {
         left: 0;
         bottom: 0;
@@ -59,11 +124,7 @@
         color: white;
         text-align: center;
     }
-    .titulo{
-        text-align: center;
-        margin-bottom: 80px;
-        margin-top: 60px;
-    }
+    
     .logotop{
         width: 150px;
         margin-left: 80px;
@@ -99,11 +160,7 @@
     .main .card{
         margin-bottom: 15px;
     }  
-    body {
-        color: #fff;
-        background: rgb(179, 13, 24);
-        font-family: 'Roboto', sans-serif;
-    }
+   
     .form-control {
         font-size: 15px;
     }
@@ -230,18 +287,10 @@
     .navbar-collapse{
         display:none;
     }
-    .carousel-inner{
-        max-width: 100%;
-        align-self: center;
-    }
+    
     .pequi{
         top: 0;
         margin-left: 20px;
-    }
-    .batima{
-        max-height: 100%;
-        max-width: 100%;
-        align-self: center;
     }
     .footer {
         left: 0;
@@ -250,11 +299,6 @@
         background: rgb(255, 193, 38);
         color: white;
         text-align: center;
-    }
-    .titulo{
-        text-align: center;
-        margin-bottom: 80px;
-        margin-top: 60px;
     }
  
     .logobottom{
@@ -265,11 +309,6 @@
 
     .main .card{
         margin-bottom: 15px;
-    }
-    body {
-        color: #fff;
-        background: rgb(179, 13, 24);
-        font-family: 'Roboto', sans-serif;
     }
     .form-control {
         font-size: 15px;
@@ -393,9 +432,6 @@
     .header{
         background: rgb(255, 193, 38);
     }
-    .amarelo{
-        color: (255, 193, 38);
-    }
     .header_menu{
         margin-top: 12px;
         margin-left: 5px;
@@ -415,10 +451,7 @@
         background-color: black;
         color: #fff;
     }
-    .main .active{
-        background-color:lightgray;
-        color: #fff;
-    }
+    
     .carousel-inner{
         max-width: 100%;
         max-height: 600px;
@@ -431,11 +464,6 @@
         top: 0;
         margin-left: 20px;
     }
-    .batima{
-        max-width: 100%;
-        max-height: 300px;
-        align-self: center;
-    }
     .footer {
         padding:10px;
         left: 0;
@@ -444,11 +472,6 @@
         background: rgb(255, 193, 38);
         color: #fff;
         text-align: center;
-    }
-    .titulo{
-        text-align: center;
-        margin-bottom: 80px;
-        margin-top: 60px;
     }
     .logotop{
         width: 130px;
@@ -487,11 +510,6 @@
     }
     .nav-link{
         color: #fff;
-    }
-    body {
-        color: #fff;
-        background: rgb(179, 13, 24);
-        font-family: 'Roboto', sans-serif;
     }
     .card-text{
         color:black;
