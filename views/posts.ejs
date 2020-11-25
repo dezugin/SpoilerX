@@ -1,0 +1,18 @@
+<%- include ('./partials/header') %>
+
+    <div id = "formulario"></div>
+    <h1>Home</h1>
+    <a href="/forum/new">Novo post</a><br>
+
+    <% for (let i = 0; i < len; i++) { %>
+    <% const post = posts[i] %>
+    <main class="container main">
+        <h3><%=post.name%></h3>
+        <h5><%if(post.spoiler.length > 120){ %><%= post.spoiler.substr(0, 120) %><a style="font-size: 17px" href="/forum/posts/<%- post.id -%>">  Ler mais...</a><%} else{ %> <%=post.spoiler%> <a style="font-size: 17px" href="/forum/posts/<%- post.id -%>">  Ver post</a> <%}%></h5>
+        <h6>Por: <%=post.puser%></h6>
+        <p>Nota dos usuários: <%=(post.rating).toFixed(2)%></p><br>
+    </main>
+    <% } %>
+</div>
+
+<%- include ('./partials/footer') %>

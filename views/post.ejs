@@ -1,0 +1,20 @@
+<%- include ('./partials/header') %>
+
+    <div id = "formulario"></div>
+    <h1>Home</h1>
+    <a href="/forum/new">Novo post</a><br>
+
+    <% for (let i = 0; i < len; i++) { %>
+    <% const post = posts[i] %>
+    <main class="container main">
+        <h3><%=post.name%></h3>
+        <h5><%=post.spoiler%></h5>
+        <h6 style="color: black !important">Postado por: <%=post.puser%></h6>
+        <p>Nota dos usuários: <%=(post.rating).toFixed(2)%></p>
+        <a style="font-size: 17px; color: #030303 !important" href="/forum/posts/<%- post.id -%>/rate"> Dar uma nota ao spoiler!</a><br><br>
+        <a style="font-size: 17px" href="/forum/posts"> Voltar</a>
+    </main>
+    <% } %>
+</div>
+
+<%- include ('./partials/footer') %>
