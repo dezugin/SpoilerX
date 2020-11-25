@@ -70,6 +70,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/users/dashboard">Dashboard</a>
                 <a class="dropdown-item" href="/users/alter">Mudar senha</a>
+                <a class="dropdown-item" href="/forum/posts">Spoilers</a>
               </div>
 
         </div>
@@ -80,6 +81,7 @@
 
 
 </header>
+<main class = "container main">
 <div id = "formulario">
     <a href="/users/logout">Logout</a>
     <h1>Ola <%= user.charAt(0).toUpperCase()+user.slice(1)%></h1>
@@ -100,9 +102,11 @@
         <li><%= messages.error %></li>
         <% } %>
       </ul>
+      <div> <a href="/forum/posts">Spoilers</a></div>
       <div><a href="/users/alter">Mudar a senha</a></div>
     <div><a href="/users/delete">Deletar a conta</a></div>
     </div>
+</main>
     <footer class="container footer">
       Copyright 2020 - Disciplina de Trabalho interdisciplinar 1 e 2 - <b>ICEI PUC Minas</b>
       <img src ="/public/assets/imagens/spoilerx.jpg" alt="LPH" class="logobottom">
