@@ -8,7 +8,7 @@
     <% const post = posts[i] %>
     <main class="container main">
         <h3><%=post.name%></h3>
-        <h5><%if(post.spoiler.length > 120){ %><%= post.spoiler.substr(0, 120) %><a style="font-size: 17px" href="/forum/posts/<%- post.id -%>">  Ler mais...</a><%} else{ %> <a style="font-size: 17px" href="/forum/posts/<%- post.id -%>">  Ver Spoiler</a> <%}%></h5>
+        <h5><a style="font-size: 17px" href="/forum/posts/<%- post.id -%>">  Ver Spoiler</a></h5>
         <h6>Por: <%=post.puser%></h6>
         <p>Nota dos usuários: <%=(post.rating).toFixed(2)%></p><br>
     </main>
